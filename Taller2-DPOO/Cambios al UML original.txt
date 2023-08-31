@@ -1,0 +1,49 @@
+Aplicación:
+	- Cambio nombre de la clase a Application
+	- Añadir atributos a la clase:
+		+ Restaurante elCorral: facilita entrar a las funciones del restaurante
+		+ ArrayList<ProductoMenu> productos: facilita acceder a los productos
+		+ ArrayList<Combo> combos: facilita acceder a los combos
+		+ ArrayList<Ingrediente> ingredientes: facilita acceder a los ingredientes
+		+ ArrayList<Bebida> bebidas: facilita acceder a las bebidas
+	- Añadir funciones:
+		+ correrAplicación(): inicia la aplicación, dandole calores a los atributos e iniciando el bucle principal
+		+ opciones(): Muestra opciones del menú
+		+ productosMenu(), combosMenu(), bebidasMenu(), ingredientesMenu(): imprimen todos los elementos del menú por categoría
+		+ input(): recibe una cadena y devuelve lo que el usuario ingresa por consola
+
+Restaurante:
+	- Añadir atributos para guardar fácilmente los archivos de los datos, los elementos del menú y el historial de pedidos del restaurante, así como el pedido actual para devolverlo fácilmente.
+	- Añadir métodos: 
+		+ getCombos(), getBebidas(): por evidentes razones
+		+ cargarBebidas(): evidentes razones
+
+Pedido:
+	- Añadir atributo productos para guardar los productos añadidos al pedido actual
+	- Añadir los métodos getCaloriasTotales() y equals(): requisitos de la guía
+
+Bebida: 
+	- Implementación completa: requisito de la guía
+
+Combo:
+	- Atributos items y calorias: items para guardar los ítems que hacen parte del combo y calorías por la guía
+	- Métodos getItems() y getCalorias(): obvias razones
+
+Ingredientes:
+	- Cambios para añadir las calorías por ingrediente
+
+Producto:
+	- getCalorias(): obvias razones
+
+ProductoMenu():
+	- getCalorias() y calorias: por la guía
+
+ProductoAjustado:
+	- Atributos:
+		+ base: guarda la base del producto
+		+ adiciones y eliminados: guardan todas las adiciones y eliminaciones hechas al producto
+		+ calorias: por la guía
+	- Métodos:
+		+ agregar(): adiciona un ingrediente al producto
+		+ eliminar(): elimina un ingrediente del producto
+		+ getCalorias(): por guía
